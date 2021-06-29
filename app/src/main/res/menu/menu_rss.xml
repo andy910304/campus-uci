@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:app="http://schemas.android.com/apk/res-auto"
+	  xmlns:tools="http://schemas.android.com/tools"
+	  tools:context="cu.uci.rss.RssActivity">
+
+	<item android:id="@+id/new_rss"
+		  android:icon="@drawable/ic_rss_plus"
+		  android:title="@string/new_rss"
+		  android:orderInCategory="100"
+		  app:showAsAction="always" />
+
+	<item android:id="@+id/wifi_off"
+		  android:title="@string/last_searchs"
+		  android:orderInCategory="100"
+		  app:showAsAction="never" />
+
+
+	<item android:id="@+id/action_last_delete"
+		  android:title="@string/delete_all"
+		  android:orderInCategory="100"
+		  app:showAsAction="never" />
+
+	<item android:id="@+id/action_custom_rss"
+		  android:title="@string/custom_rss"
+		  android:orderInCategory="100"
+		  app:showAsAction="never" />
+
+	<item android:id="@+id/action_custom_rss_show"
+		  android:title="@string/custom_rss_show"
+		  android:orderInCategory="100"
+		  app:showAsAction="never" />
+
+	<item android:id="@+id/action_custom_rss_del"
+		  android:title="@string/custom_rss_del"
+		  android:orderInCategory="100"
+		  app:showAsAction="never" />
+
+</menu>

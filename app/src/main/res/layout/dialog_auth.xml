@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+	<EditText
+		android:singleLine="true"
+		android:textColorHint="#82030303"
+		android:hint="@string/user"
+		android:id="@+id/user"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textSize="@dimen/customEntry"
+		android:layout_marginTop="4dp"
+		android:textColor="#000000" />
+
+    <EditText
+		android:singleLine="true"
+		android:hint="@string/pass"
+		android:textColorHint="#82030303"
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/customEntry"
+        android:layout_marginTop="4dp"
+        android:textColor="#000000"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/showPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/customEntry"
+        android:textColor="#000000"
+        android:text="@string/show_pass"
+        android:layout_marginTop="18dp" />
+
+	<CheckBox
+		android:id="@+id/rememberMe"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textSize="@dimen/customEntry"
+		android:textColor="#000000"
+		android:text="@string/remember_me"
+		android:layout_marginTop="18dp" />
+
+</LinearLayout>

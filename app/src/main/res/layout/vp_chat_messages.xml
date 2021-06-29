@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			 android:orientation="vertical"
+			 android:layout_width="match_parent"
+			 android:layout_height="match_parent">
+
+	<LinearLayout
+		android:padding="1dp"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:weightSum="1"
+			android:id="@+id/ll_news"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<ListView
+				android:transcriptMode="alwaysScroll"
+				android:layout_weight="1"
+				android:layout_marginTop="10dp"
+				android:divider="@color/transparent"
+				android:id="@+id/lv_chat_view"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+			</ListView>
+
+			<LinearLayout
+				android:gravity="bottom"
+				android:weightSum="1"
+				android:focusable="true"
+				android:focusableInTouchMode="true"
+				android:id="@+id/llSearchView"
+				android:background="@color/primary_color"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:orientation="horizontal">
+
+				<ImageView
+					android:id="@+id/iv_emoticons"
+					android:src="@drawable/ic_user"
+					android:layout_marginLeft="5dp"
+					android:layout_marginBottom="5dp"
+					android:layout_gravity="bottom"
+					android:layout_width="32dp"
+					android:layout_height="32dp"/>
+
+				<EditText
+					android:layout_weight="1"
+					android:layout_marginBottom="@dimen/blue_serach_margin_bottom"
+					android:nextFocusUp="@+id/et_search"
+					android:nextFocusLeft="@+id/et_search"
+					android:hint="@string/message"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="5dp"
+					android:textSize="14sp"
+					android:id="@+id/et_message"
+					android:singleLine="true"
+					android:layout_height="match_parent"
+					android:layout_width="wrap_content">
+				</EditText>
+
+				<ImageView
+					android:layout_marginRight="10dp"
+					android:id="@+id/iv_send"
+					android:src="@drawable/ic_action_send_now"
+					android:layout_marginLeft="10dp"
+					android:layout_marginBottom="5dp"
+					android:layout_gravity="bottom"
+					android:layout_width="32dp"
+					android:layout_height="32dp"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</FrameLayout>

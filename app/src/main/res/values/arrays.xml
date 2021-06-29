@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entries1">
+        <item >Marcar Punto</item>
+        <item >Otro</item>
+        <item >Otro</item>
+    </string-array>
+    
+    <string-array name="entriesValues1">
+        <item >0</item>
+        <item >1</item>
+        <item >2</item>
+    </string-array>
+
+	<string-array name="faculties">
+		<item >@string/faculty_1</item>
+		<item >@string/faculty_2</item>
+		<item >@string/faculty_3</item>
+		<item >@string/faculty_4</item>
+		<item >@string/faculty_5</item>
+		<item >@string/faculty_6</item>
+		<item >@string/faculty_7</item>
+	</string-array>
+
+	<string-array name="menu_source">
+		<item >@string/dragones</item>
+		<item >@string/octavitos</item>
+		<item >@string/zorros</item>
+		<item >@string/fac5</item>
+	</string-array>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="wrap_content"
+			  android:layout_height="wrap_content"
+			  android:orientation="vertical" >
+
+
+	<EditText
+		android:singleLine="true"
+		android:id="@+id/etEDES"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textColor="@android:color/black"
+		android:ems="10"
+		android:hint="@string/descrip" >
+	</EditText>
+
+	<EditText
+		android:singleLine="true"
+		android:id="@+id/etELAT"
+		android:textColor="@android:color/black"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:ems="10"
+		android:hint="@string/lat"
+		/>
+
+	<EditText
+		android:singleLine="true"
+		android:textColor="@android:color/black"
+		android:id="@+id/etELON"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:ems="10"
+		android:hint="@string/lon" />
+
+</LinearLayout>

@@ -1,0 +1,1275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/navigation_drawer"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true"
+	android:background="@color/primary_color">
+
+	<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				 xmlns:tools="http://schemas.android.com/tools"
+				 android:layout_width="match_parent"
+				 android:layout_height="match_parent"
+				 android:orientation="vertical"
+				 tools:context=".MainActivity"
+				 android:background="@color/app_background">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<LinearLayout
+				android:background="#ffffff"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<ScrollView
+					android:scrollbars="none"
+					android:background="#ffffff"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<LinearLayout
+						android:background="@color/app_background"
+						android:orientation="vertical"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent">
+
+						<LinearLayout
+							android:padding="5dp"
+							android:id="@+id/ll_general_"
+							android:background="#ffffff"
+							android:orientation="horizontal"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:weightSum="1">
+
+							<ImageView
+								android:layout_marginTop="5dp"
+								android:src="@drawable/ic_settings_nav"
+								android:layout_gravity="left|center"
+								android:layout_weight=".1"
+								android:layout_width="28dp"
+								android:layout_height="28dp"/>
+
+							<TextView
+								android:layout_marginTop="5dp"
+								android:id="@+id/general_sett"
+								android:text="@string/general"
+								android:paddingLeft="12dp"
+								android:layout_gravity="left|center"
+								android:textColor="@color/text_color"
+								android:textSize="17sp"
+								android:layout_weight=".8"
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"/>
+
+						</LinearLayout>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_general_activate_notif"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/general_activate_notif"
+									android:text="@string/activate_notifications"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_general_close_alert"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/general_close_alert"
+									android:text="@string/close_alerts"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_general_delete_alert"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/general_delete_alert"
+									android:text="@string/delete_alerts"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_general_proximity"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/general_proximity"
+									android:text="@string/proximity"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_log_in"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/general_log_in"
+									android:text="@string/log_in_on_start"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_exit_anim"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/general_exit_anim"
+									android:text="@string/exit_anim"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<LinearLayout
+							android:layout_marginTop="2dp"
+							android:padding="5dp"
+							android:id="@+id/ll_rss_"
+							android:background="#ffffff"
+							android:orientation="horizontal"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:weightSum="1">
+
+							<ImageView
+								android:src="@drawable/ic_rss_nav"
+								android:layout_gravity="left|center"
+								android:layout_weight=".1"
+								android:layout_width="28dp"
+								android:layout_height="28dp"/>
+
+							<TextView
+								android:id="@+id/rss_sett"
+								android:text="@string/rss_notif"
+								android:paddingLeft="12dp"
+								android:layout_gravity="left|center"
+								android:textColor="@color/text_color"
+								android:textSize="17sp"
+								android:layout_weight=".8"
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"/>
+
+						</LinearLayout>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_rss_vib"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/rss_vib"
+									android:text="@string/vib"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_rss_sound"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/rss_sound"
+									android:text="@string/sound"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_rss_led"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/rss_led"
+									android:text="@string/led"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_rss_load"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/rss_load"
+									android:text="@string/load_rss"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_rss_pref"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<TextView
+									android:layout_marginLeft="10dp"
+									android:layout_gravity="center"
+									android:layout_weight=".8"
+									android:id="@+id/rss_pref"
+									android:text="@string/pref_rss"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"/>
+
+								<ImageView
+									android:src="@drawable/firefox"
+									android:layout_weight=".2"
+									android:id="@+id/rss_pref_img"
+									android:layout_width="32dp"
+									android:layout_height="32dp"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_rss_what"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<TextView
+									android:layout_marginLeft="10dp"
+									android:layout_gravity="center"
+									android:layout_weight=".8"
+									android:id="@+id/rss_what"
+									android:text="@string/on_touch"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_rss_select"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/rss_load_select"
+									android:text="@string/rss_select"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_animate_news"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/rss_animate_news"
+									android:text="@string/animate_news"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<LinearLayout
+							android:layout_marginTop="2dp"
+							android:padding="5dp"
+							android:id="@+id/ll_dir_"
+							android:background="#ffffff"
+							android:orientation="horizontal"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:weightSum="1">
+
+							<ImageView
+								android:src="@drawable/ic_directorio_nav"
+								android:layout_gravity="left|center"
+								android:layout_weight=".1"
+								android:layout_width="28dp"
+								android:layout_height="28dp"/>
+
+							<TextView
+								android:id="@+id/dir_sett"
+								android:text="@string/dir_notif"
+								android:paddingLeft="12dp"
+								android:layout_gravity="left|center"
+								android:textColor="@color/text_color"
+								android:textSize="17sp"
+								android:layout_weight=".8"
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"/>
+
+						</LinearLayout>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_dir_vib"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/dir_vib"
+									android:text="@string/vib"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_dir_sound"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/dir_sound"
+									android:text="@string/sound"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_dir_led"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/dir_led"
+									android:text="@string/led"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+
+
+						</cu.uci.utils.views.RippleView2>
+
+						<LinearLayout
+							android:layout_marginTop="2dp"
+							android:padding="5dp"
+							android:id="@+id/ll_cuota_"
+							android:background="#ffffff"
+							android:orientation="horizontal"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:weightSum="1">
+
+							<ImageView
+								android:src="@drawable/ic_cuota_nav"
+								android:layout_gravity="left|center"
+								android:layout_weight=".1"
+								android:layout_width="28dp"
+								android:layout_height="28dp"/>
+
+							<TextView
+								android:id="@+id/cuota_sett"
+								android:text="@string/cuota_notif"
+								android:paddingLeft="12dp"
+								android:layout_gravity="left|center"
+								android:textColor="@color/text_color"
+								android:textSize="17sp"
+								android:layout_weight=".8"
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"/>
+
+						</LinearLayout>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_cuota_vib"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/cuota_vib"
+									android:text="@string/vib"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_cuota_sound"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/cuota_sound"
+									android:text="@string/sound"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_cuota_led"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/cuota_led"
+									android:text="@string/led"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_cuota_load"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/cuota_load"
+									android:text="@string/load_cuota"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_cuota_time"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<TextView
+									android:layout_marginLeft="10dp"
+									android:layout_gravity="center"
+									android:layout_weight=".8"
+									android:id="@+id/cuota_time"
+									android:text="@string/quota_refresh"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_allways"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/cuota_always"
+									android:text="@string/cuota_always"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_animations"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/cuota_animations"
+									android:text="@string/cuota_animations"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<LinearLayout
+							android:layout_marginTop="2dp"
+							android:padding="5dp"
+							android:id="@+id/ll_horario_"
+							android:background="#ffffff"
+							android:orientation="horizontal"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:weightSum="1">
+
+							<ImageView
+								android:src="@drawable/ic_horario_nav"
+								android:layout_gravity="left|center"
+								android:layout_weight=".1"
+								android:layout_width="28dp"
+								android:layout_height="28dp"/>
+
+							<TextView
+								android:id="@+id/horario_sett"
+								android:text="@string/hor_notif"
+								android:paddingLeft="12dp"
+								android:layout_gravity="left|center"
+								android:textColor="@color/text_color"
+								android:textSize="17sp"
+								android:layout_weight=".8"
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"/>
+
+						</LinearLayout>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_horario_vib"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/horario_vib"
+									android:text="@string/vib"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_horario_sound"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/horario_sound"
+									android:text="@string/sound"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_horario_led"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/horario_led"
+									android:text="@string/led"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<LinearLayout
+							android:layout_marginTop="2dp"
+							android:padding="5dp"
+							android:id="@+id/ll_menu_"
+							android:background="#ffffff"
+							android:orientation="horizontal"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:weightSum="1">
+
+							<ImageView
+								android:src="@drawable/ic_menu_nav"
+								android:layout_gravity="left|center"
+								android:layout_weight=".1"
+								android:layout_width="28dp"
+								android:layout_height="28dp"/>
+
+							<TextView
+								android:id="@+id/menu_sett"
+								android:text="@string/menu_notif"
+								android:paddingLeft="12dp"
+								android:layout_gravity="left|center"
+								android:textColor="@color/text_color"
+								android:textSize="17sp"
+								android:layout_weight=".8"
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"/>
+
+						</LinearLayout>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_menu_vib"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/menu_vib"
+									android:text="@string/vib"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_menu_sound"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/menu_sound"
+									android:text="@string/sound"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_menu_led"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/menu_led"
+									android:text="@string/led"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_menu_load"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/menu_load"
+									android:text="@string/load_menu"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_menu_pref"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<TextView
+									android:layout_marginLeft="10dp"
+									android:layout_gravity="center"
+									android:layout_weight=".8"
+									android:id="@+id/menu_pref"
+									android:text="@string/pref_menu"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"/>
+
+								<ImageView
+									android:src="@drawable/firefox"
+									android:layout_weight=".2"
+									android:id="@+id/menu_pref_img"
+									android:layout_width="32dp"
+									android:layout_height="32dp"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<LinearLayout
+							android:layout_marginTop="2dp"
+							android:padding="5dp"
+							android:id="@+id/ll_chat_"
+							android:background="#ffffff"
+							android:orientation="horizontal"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:weightSum="1">
+
+							<ImageView
+								android:src="@drawable/ic_chat_nav"
+								android:layout_gravity="left|center"
+								android:layout_weight=".1"
+								android:layout_width="28dp"
+								android:layout_height="28dp"/>
+
+							<TextView
+								android:id="@+id/chat_sett"
+								android:text="@string/chat_notif"
+								android:paddingLeft="12dp"
+								android:layout_gravity="left|center"
+								android:textColor="@color/text_color"
+								android:textSize="17sp"
+								android:layout_weight=".8"
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"/>
+
+						</LinearLayout>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_chat_vib"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/chat_vib"
+									android:text="@string/vib"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_chat_sound"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/chat_sound"
+									android:text="@string/sound"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<cu.uci.utils.views.RippleView2
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:id="@+id/ll_chat_led"
+								android:background="#ffffff"
+								android:padding="5dp"
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:weightSum="1">
+
+								<CheckBox
+									android:id="@+id/chat_led"
+									android:text="@string/led"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"/>
+
+							</LinearLayout>
+
+						</cu.uci.utils.views.RippleView2>
+
+						<LinearLayout
+							android:id="@+id/ll_chat_host"
+							android:background="#ffffff"
+							android:padding="5dp"
+							android:orientation="horizontal"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:weightSum="1">
+
+							<TextView
+								android:layout_marginLeft="10dp"
+								android:id="@+id/chat_host_tv"
+								android:text="@string/host"
+								android:layout_gravity="left|center"
+								android:textColor="@color/text_color"
+								android:textSize="14sp"
+								android:layout_weight=".2"
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"/>
+
+							<android.support.v7.internal.widget.TintEditText
+								android:layout_marginRight="15dp"
+								android:singleLine="true"
+								android:id="@+id/chat_host"
+								android:hint="@string/host"
+								android:text="@string/jabber"
+								android:textColor="@color/text_color"
+								android:textSize="14sp"
+								android:layout_weight=".8"
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/ll_chat_service"
+							android:background="#ffffff"
+							android:padding="5dp"
+							android:orientation="horizontal"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:weightSum="1">
+
+							<TextView
+								android:layout_marginLeft="10dp"
+								android:id="@+id/chat_service_tv"
+								android:text="@string/service"
+								android:layout_gravity="left|center"
+								android:textColor="@color/text_color"
+								android:textSize="14sp"
+								android:layout_weight=".2"
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"/>
+
+							<android.support.v7.internal.widget.TintEditText
+								android:layout_marginRight="15dp"
+								android:singleLine="true"
+								android:id="@+id/chat_service"
+								android:hint="@string/service"
+								android:text="@string/jabber"
+								android:textColor="@color/text_color"
+								android:textSize="14sp"
+								android:layout_weight=".8"
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/ll_chat_port"
+							android:background="#ffffff"
+							android:padding="5dp"
+							android:orientation="horizontal"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:weightSum="1">
+
+							<TextView
+								android:layout_marginLeft="10dp"
+								android:id="@+id/chat_port_tv"
+								android:text="@string/port"
+								android:layout_gravity="left|center"
+								android:textColor="@color/text_color"
+								android:textSize="14sp"
+								android:layout_weight=".2"
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"/>
+
+							<android.support.v7.internal.widget.TintEditText
+								android:layout_marginRight="15dp"
+								android:singleLine="true"
+								android:id="@+id/chat_port"
+								android:hint="@string/port"
+								android:text="@string/jabber_port"
+								android:inputType="number"
+								android:textColor="@color/text_color"
+								android:textSize="14sp"
+								android:layout_weight=".8"
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+				</ScrollView>
+			</LinearLayout>
+
+		</RelativeLayout>
+
+		<cu.uci.utils.FloatingButtonLib.ActionButton
+			android:layout_gravity="right|bottom"
+			android:layout_marginRight="15dp"
+			android:layout_marginBottom="15dp"
+			android:id="@+id/fab_set"
+			android:layout_width="56dp"
+			android:layout_height="56dp"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"/>
+
+	</FrameLayout>
+
+</LinearLayout>

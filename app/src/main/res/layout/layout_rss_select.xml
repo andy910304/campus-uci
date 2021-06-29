@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cu.uci.utils.views.RippleView2
+	android:id="@+id/rss_selectd"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<LinearLayout
+		android:weightSum="1"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="5dp">
+
+		<ImageView
+			android:layout_marginLeft="10dp"
+			android:layout_weight=".1"
+			android:id="@+id/iv_rss_sel"
+			android:layout_width="32dp"
+			android:layout_height="32dp"/>
+
+		<TextView
+			android:layout_marginLeft="10dp"
+			android:layout_weight=".9"
+			android:id="@+id/tv_rss_sel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Prueba"
+			android:layout_gravity="center_vertical"
+			android:textColor="@color/text_color"
+			android:textSize="14sp"/>
+
+		</LinearLayout>
+
+</cu.uci.utils.views.RippleView2>

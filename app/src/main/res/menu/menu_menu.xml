@@ -1,0 +1,63 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:app="http://schemas.android.com/apk/res-auto"
+	  xmlns:tools="http://schemas.android.com/tools"
+	  tools:context="cu.uci.menu.MenuActivity">
+
+	<item android:id="@+id/action_search_in"
+		  android:title="@string/actions_search_in"
+		  android:orderInCategory="100"
+		  android:icon="@drawable/ic_action_search"
+		  app:showAsAction="always">
+
+	<menu>
+
+	<group
+		android:checkableBehavior="single">
+
+		<item android:id="@+id/action_dragones"
+			  android:checked="true"
+			  android:icon="@drawable/dragon3s1"
+			  android:title="@string/dragones"
+			  android:orderInCategory="100"
+			/>
+
+		<item android:id="@+id/action_octavitos"
+			  android:title="@string/octavitos"
+			  android:icon="@drawable/octavito"
+			  android:orderInCategory="100" />
+
+		<item android:id="@+id/action_zorros"
+			  android:icon="@drawable/zorros"
+			  android:title="@string/zorros"
+			  android:orderInCategory="100"/>
+
+		<item android:id="@+id/action_facultad5"
+			  android:icon="@drawable/grundys"
+			  android:title="@string/fac5"
+			  android:orderInCategory="100" />
+
+		<!--<item android:id="@+id/action_gladiadores"
+			  android:icon="@drawable/ic_gladiadores"
+			  android:title="@string/gladiadores"
+			  android:orderInCategory="100" />-->
+	</group>
+
+		</menu>
+</item>
+
+	<item android:id="@+id/action_last_search"
+		  android:title="@string/last_search"
+		  android:orderInCategory="100"
+		  app:showAsAction="never" />
+
+	<item android:id="@+id/action_clean"
+		  android:title="@string/clean"
+		  android:orderInCategory="100"
+		  app:showAsAction="never" />
+
+	<item android:id="@+id/action_last_delete"
+		  android:title="@string/delete_all"
+		  android:orderInCategory="100"
+		  app:showAsAction="never" />
+
+</menu>

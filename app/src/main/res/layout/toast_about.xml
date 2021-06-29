@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:card_view="http://schemas.android.com/apk/res-auto"
+			  android:orientation="horizontal"
+			  android:layout_width="wrap_content"
+			  android:layout_height="wrap_content"
+			  android:id="@+id/toast_about"
+			  android:background="@color/app_background2_transparent">
+
+
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@color/app_background2_transparent">
+
+		<TextView
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			android:textSize="18sp"
+			android:textColor="@color/text_color"
+			android:id="@+id/tvDevelopBy"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/develop_by"/>
+
+		<TextView
+			android:paddingRight="20dp"
+			android:paddingLeft="15dp"
+			android:textSize="18sp"
+			android:textColor="@color/text_color"
+			android:id="@+id/tvDevelopByYannier"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/yannier"/>
+
+		<TextView
+			android:paddingRight="20dp"
+			android:paddingLeft="15dp"
+			android:textSize="18sp"
+			android:textColor="@color/text_color"
+			android:id="@+id/tvDevelopByAndy"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/andy"/>
+
+		</LinearLayout>
+
+</LinearLayout>

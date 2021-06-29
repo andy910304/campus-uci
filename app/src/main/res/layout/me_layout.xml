@@ -1,0 +1,419 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				 xmlns:tools="http://schemas.android.com/tools"
+				 android:layout_width="match_parent"
+				 android:layout_height="match_parent"
+				 android:orientation="vertical"
+				 tools:context=".MainActivity">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<cu.uci.utils.views.CircleImageView
+				android:id="@+id/login_picture_"
+				android:layout_width="160dp"
+				android:layout_height="160dp"
+				android:src="@drawable/empty_user"
+				android:layout_alignParentTop="true"
+				android:layout_centerHorizontal="true"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_below="@+id/login_picture_"
+				android:orientation="vertical"
+				android:weightSum="1">
+
+				<ScrollView
+					android:padding="1dp"
+					android:layout_weight=".9"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent">
+
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<LinearLayout
+							android:id="@+id/llName"
+							android:paddingLeft="5dp"
+							android:paddingTop="10dp"
+							android:paddingBottom="10dp"
+							android:paddingRight="10dp"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="horizontal"
+							android:weightSum="1">
+
+							<ImageView
+								android:id="@+id/ivName"
+								android:layout_width="32dp"
+								android:layout_height="32dp"
+								android:src="@drawable/ic_name"
+								android:layout_weight=".1"/>
+
+							<TextView
+								android:id="@+id/tvName_"
+								android:textSize="14sp"
+								android:paddingTop="10dp"
+								android:paddingLeft="10dp"
+								android:textColor="@color/text_color"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".9"
+								android:text="@string/name"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/llUser"
+							android:paddingLeft="5dp"
+							android:paddingTop="10dp"
+							android:paddingBottom="10dp"
+							android:paddingRight="10dp"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="horizontal"
+							android:weightSum="1">
+
+							<ImageView
+								android:id="@+id/ivUser"
+								android:layout_width="32dp"
+								android:layout_height="32dp"
+								android:src="@drawable/ic_user"
+								android:layout_weight=".1"/>
+
+							<TextView
+								android:id="@+id/tvUser_"
+								android:textSize="14sp"
+								android:paddingTop="10dp"
+								android:paddingLeft="10dp"
+								android:textColor="@color/text_color"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".9"
+								android:text="@string/usuario"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/llDni"
+							android:paddingLeft="5dp"
+							android:paddingTop="10dp"
+							android:paddingBottom="10dp"
+							android:paddingRight="10dp"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="horizontal"
+							android:weightSum="1">
+
+							<ImageView
+								android:id="@+id/ivDni"
+								android:layout_width="32dp"
+								android:layout_height="32dp"
+								android:src="@drawable/ic_dni"
+								android:layout_weight=".1"/>
+
+							<TextView
+								android:id="@+id/tvDni_"
+								android:textSize="14sp"
+								android:paddingTop="10dp"
+								android:paddingLeft="10dp"
+								android:textColor="@color/text_color"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".9"
+								android:text="@string/dni"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/llCategory"
+							android:paddingLeft="5dp"
+							android:paddingTop="10dp"
+							android:paddingBottom="10dp"
+							android:paddingRight="10dp"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="horizontal"
+							android:weightSum="1">
+
+							<ImageView
+								android:id="@+id/ivCategory"
+								android:layout_width="32dp"
+								android:layout_height="32dp"
+								android:src="@drawable/ic_category"
+								android:layout_weight=".1"/>
+
+							<TextView
+								android:id="@+id/tvCategory_"
+								android:textSize="14sp"
+								android:paddingTop="10dp"
+								android:paddingLeft="10dp"
+								android:textColor="@color/text_color"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".9"
+								android:text="@string/category"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/llExp"
+							android:paddingLeft="5dp"
+							android:paddingTop="10dp"
+							android:paddingBottom="10dp"
+							android:paddingRight="10dp"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="horizontal"
+							android:weightSum="1">
+
+							<ImageView
+								android:id="@+id/ivExp"
+								android:layout_width="32dp"
+								android:layout_height="32dp"
+								android:src="@drawable/ic_exp"
+								android:layout_weight=".1"/>
+
+							<TextView
+								android:id="@+id/tvExp_"
+								android:textSize="14sp"
+								android:paddingTop="10dp"
+								android:paddingLeft="10dp"
+								android:textColor="@color/text_color"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".9"
+								android:text="@string/exp"/>
+
+						</LinearLayout>
+
+
+						<LinearLayout
+							android:id="@+id/llCredencial"
+							android:paddingLeft="5dp"
+							android:paddingTop="10dp"
+							android:paddingBottom="10dp"
+							android:paddingRight="10dp"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="horizontal"
+							android:weightSum="1">
+
+							<ImageView
+								android:id="@+id/ivCredencial"
+								android:layout_width="32dp"
+								android:layout_height="32dp"
+								android:src="@drawable/ic_credencial"
+								android:layout_weight=".1"/>
+
+							<TextView
+								android:id="@+id/tvCredencial_"
+								android:textSize="14sp"
+								android:paddingTop="10dp"
+								android:paddingLeft="10dp"
+								android:textColor="@color/text_color"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".9"
+								android:text="@string/credencial"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/llProv_Mun"
+							android:paddingLeft="5dp"
+							android:paddingTop="10dp"
+							android:paddingBottom="10dp"
+							android:paddingRight="10dp"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="horizontal"
+							android:weightSum="1">
+
+							<ImageView
+								android:id="@+id/ivProv_Mun"
+								android:layout_width="32dp"
+								android:layout_height="32dp"
+								android:src="@drawable/ic_prov_mun"
+								android:layout_weight=".1"/>
+
+							<TextView
+								android:id="@+id/tvProv_Mun_"
+								android:textSize="14sp"
+								android:paddingTop="10dp"
+								android:paddingLeft="10dp"
+								android:textColor="@color/text_color"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".9"
+								android:text="@string/prov_mun"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/llBuilding"
+							android:paddingLeft="5dp"
+							android:paddingTop="10dp"
+							android:paddingBottom="10dp"
+							android:paddingRight="10dp"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="horizontal"
+							android:weightSum="1">
+
+							<ImageView
+								android:id="@+id/ivBuilding"
+								android:layout_width="32dp"
+								android:layout_height="32dp"
+								android:src="@drawable/ic_building"
+								android:layout_weight=".1"/>
+
+							<TextView
+								android:id="@+id/tvBuilding_"
+								android:textSize="14sp"
+								android:paddingTop="10dp"
+								android:paddingLeft="10dp"
+								android:textColor="@color/text_color"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".9"
+								android:text="@string/building"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/llArea"
+							android:paddingLeft="5dp"
+							android:paddingTop="10dp"
+							android:paddingBottom="10dp"
+							android:paddingRight="10dp"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="horizontal"
+							android:weightSum="1">
+
+							<ImageView
+								android:id="@+id/ivArea"
+								android:layout_width="32dp"
+								android:layout_height="32dp"
+								android:src="@drawable/ic_area"
+								android:layout_weight=".1"/>
+
+							<TextView
+								android:id="@+id/tvArea_"
+								android:textSize="14sp"
+								android:paddingTop="10dp"
+								android:paddingLeft="10dp"
+								android:textColor="@color/text_color"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".9"
+								android:text="@string/area"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/llPhone"
+							android:paddingLeft="5dp"
+							android:paddingTop="10dp"
+							android:paddingBottom="10dp"
+							android:paddingRight="10dp"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="horizontal"
+							android:weightSum="1">
+
+							<ImageView
+								android:id="@+id/ivPhone"
+								android:layout_width="32dp"
+								android:layout_height="32dp"
+								android:src="@drawable/ic_phone"
+								android:layout_weight=".1"/>
+
+							<TextView
+								android:id="@+id/tvPhone_"
+								android:textSize="14sp"
+								android:paddingTop="10dp"
+								android:paddingLeft="10dp"
+								android:textColor="@color/text_color"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".9"
+								android:text="@string/phone"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/llEmail"
+							android:paddingLeft="5dp"
+							android:paddingTop="10dp"
+							android:paddingBottom="10dp"
+							android:paddingRight="10dp"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="horizontal"
+							android:weightSum="1">
+
+							<ImageView
+								android:id="@+id/ivEmail"
+								android:layout_width="32dp"
+								android:layout_height="32dp"
+								android:src="@drawable/ic_email"
+								android:layout_weight=".1"/>
+
+							<TextView
+								android:id="@+id/tvEmail_"
+								android:textSize="14sp"
+								android:paddingTop="10dp"
+								android:paddingLeft="10dp"
+								android:textColor="@color/text_color"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".9"
+								android:text="@string/email"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/llSexo"
+							android:paddingLeft="5dp"
+							android:paddingTop="10dp"
+							android:paddingBottom="10dp"
+							android:paddingRight="10dp"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="horizontal"
+							android:weightSum="1">
+
+							<ImageView
+								android:id="@+id/ivSexo"
+								android:layout_width="32dp"
+								android:layout_height="32dp"
+								android:src="@drawable/ic_sexo"
+								android:layout_weight=".1"/>
+
+							<TextView
+								android:id="@+id/tvSexo_"
+								android:textSize="14sp"
+								android:paddingTop="10dp"
+								android:paddingLeft="10dp"
+								android:textColor="@color/text_color"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".9"
+								android:text="@string/sexo"/>
+
+						</LinearLayout>
+
+
+					</LinearLayout>
+
+				</ScrollView>
+
+			</LinearLayout>
+
+		</RelativeLayout>
+	</LinearLayout>

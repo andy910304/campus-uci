@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cu.uci.utils.views.RippleViewSeguridad
+	android:id="@+id/noticia_ripple"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:card_view="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<android.support.v7.widget.CardView
+		android:id="@+id/cv_noticia"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/card_view_marging"
+		card_view:cardCornerRadius="1dp"
+		card_view:cardElevation= "3dp">
+		<LinearLayout
+			android:background="@color/seguridad_color"
+			android:padding="10dp"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<RelativeLayout
+				android:id="@+id/ll_iv_rss"
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent">
+
+				<TextView
+					android:layout_marginRight="40dp"
+					android:singleLine="true"
+					android:id="@+id/tv_link"
+					android:textColor="@color/fab_material_blue_500"
+					android:text="@string/barchart"
+					android:textSize="14sp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentStart="true"/>
+
+				<ImageView
+					android:layout_gravity="right"
+					android:src="@drawable/firefox"
+					android:id="@+id/iv_rss"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:scaleType="fitXY"
+					android:layout_alignParentTop="true"
+					android:layout_alignParentRight="true"
+					android:layout_alignParentEnd="true"/>
+			</RelativeLayout>
+
+			<View
+				android:id="@+id/shadow_first"
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="@drawable/toolbar_dropshadow" />
+
+			<LinearLayout
+				android:layout_marginTop="5dp"
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<TextView
+					android:id="@+id/tv_author"
+					android:textColor="@color/text_color"
+					android:text="@string/barchart"
+					android:textSize="14sp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+
+				<TextView
+					android:layout_marginTop="5dp"
+					android:id="@+id/tv_date"
+					android:textColor="@color/text_color"
+					android:text="@string/barchart"
+					android:textSize="14sp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+
+				<TextView
+					android:maxLines="3"
+					android:layout_marginTop="5dp"
+					android:id="@+id/tv_title"
+					android:textColor="@color/text_color"
+					android:text="@string/barchart"
+					android:textSize="16sp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+
+				<TextView
+					android:maxLines="5"
+					android:layout_marginTop="5dp"
+					android:id="@+id/tv_descrpt"
+					android:textColor="@color/text_color"
+					android:text="@string/barchart"
+					android:textSize="14sp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+			</LinearLayout>
+
+			<View
+				android:layout_marginTop="5dp"
+				android:id="@+id/shadow_second"
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="@drawable/toolbar_dropshadow" />
+
+			<LinearLayout
+				android:layout_marginTop="5dp"
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<ImageView
+					android:layout_gravity="center"
+					android:src="@drawable/firefox"
+					android:id="@+id/iv_rss_picture"
+					android:layout_width="120dp"
+					android:layout_height="120dp"
+					android:scaleType="fitXY"/>
+			</LinearLayout>
+
+			<View
+				android:layout_marginTop="5dp"
+				android:id="@+id/shadow_third"
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="@drawable/toolbar_dropshadow" />
+
+			<LinearLayout
+				android:layout_marginTop="5dp"
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<ImageView
+					android:layout_gravity="left"
+					android:src="@drawable/ic_comments"
+					android:id="@+id/iv_comments"
+					android:layout_width="32dp"
+					android:layout_height="32dp"
+					android:scaleType="fitXY"/>
+
+				<TextView
+					android:layout_marginLeft="3dp"
+					android:layout_marginTop="5dp"
+					android:id="@+id/tv_comments"
+					android:textColor="@color/text_color"
+					android:text="@string/barchart"
+					android:textSize="14sp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+			</LinearLayout>
+
+
+		</LinearLayout>
+
+	</android.support.v7.widget.CardView>
+
+</cu.uci.utils.views.RippleViewSeguridad>

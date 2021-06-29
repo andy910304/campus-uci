@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Preference fragment padding, sides -->
+	<dimen name="blue_serach_margin_bottom">3dp</dimen>
+
+</resources>

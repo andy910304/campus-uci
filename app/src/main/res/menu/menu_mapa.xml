@@ -1,0 +1,198 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:app="http://schemas.android.com/apk/res-auto"
+	  xmlns:tools="http://schemas.android.com/tools"
+	  tools:context="cu.uci.mapa.MapaActivity">
+
+	<item
+		android:id="@+id/action_gps"
+		android:orderInCategory="100"
+		android:title="@string/Gps"
+		app:showAsAction="never"/>
+	<item
+		android:id="@+id/action_follow"
+		android:checkable="true"
+		android:orderInCategory="100"
+		android:title="@string/follow"
+		app:showAsAction="never"/>
+
+	<item
+		android:id="@+id/action_last_position"
+		android:orderInCategory="100"
+		android:title="@string/last_position"
+		app:showAsAction="never"/>
+
+	<item
+		android:id="@+id/action_center"
+		android:icon="@drawable/ic_dialog_map"
+		android:orderInCategory="100"
+		android:title="@string/Center"
+		app:showAsAction="always"/>
+
+	<!-- Donde Estoy -->
+	<!--<item
+		android:id="@+id/action_my_location"
+		android:icon="@drawable/ic_menu_mylocation"
+		android:orderInCategory="100"
+		android:title="@string/location"
+		app:showAsAction="always"/> -->
+
+	<!-- Search -->
+	<item
+		android:id="@+id/action_search"
+		android:icon="@drawable/ic_action_search"
+		android:orderInCategory="100"
+		android:title="@string/search"
+		app:showAsAction="always">
+		<menu>
+
+			<!-- Docentes -->
+			<item
+				android:id="@+id/action_docente_group"
+				android:title="Docentes">
+				<menu>
+					<item
+						android:id="@+id/action_docente_1"
+						android:title="Docente 1(Verde)"/>
+					<item
+						android:id="@+id/action_docente_2"
+						android:title="Docente 2(Multicolor)"/>
+					<item
+						android:id="@+id/action_docente_3"
+						android:title="Docente 3(Chino)"/>
+					<item
+						android:id="@+id/action_docente_4"
+						android:title="Docente 4(Rojo)"/>
+					<item
+						android:id="@+id/action_docente_5"
+						android:title="Docente 5(Azul)"/>
+					<item
+						android:id="@+id/action_docente_6"
+						android:title="Docente 6(Albet)"/>
+					<item
+						android:id="@+id/action_docente_todos"
+						android:title="Todos"/>
+				</menu>
+			</item>
+
+			<!-- Comedores -->
+			<item
+				android:id="@+id/action_comedor_group"
+				android:title="Comedores">
+				<menu>
+					<item
+						android:id="@+id/action_comedor_1"
+						android:title="Complejo 1"/>
+					<item
+						android:id="@+id/action_comedor_2"
+						android:title="Complejo 2"/>
+					<item
+						android:id="@+id/action_comedor_3"
+						android:title="Complejo 3"/>
+					<item
+						android:id="@+id/action_comedor_todos"
+						android:title="Todos"/>
+				</menu>
+			</item>
+
+			<!-- Hospital -->
+			<item
+				android:id="@+id/action_hospital"
+				android:title="Hospital"/>
+
+			<!-- Plazas -->
+			<item
+				android:id="@+id/action_plaza"
+				android:title="Plazas">
+				<menu>
+					<item
+						android:id="@+id/action_plaza_mella"
+						android:title="Plaza Mella"/>
+					<item
+						android:id="@+id/action_plaza_lam"
+						android:title="Plaza W.Lam"/>
+					<item
+						android:id="@+id/action_plaza_niemeyer"
+						android:title="Plaza Niemeyer"/>
+					<item
+						android:id="@+id/action_plaza_todos"
+						android:title="Todas"/>
+				</menu>
+			</item>
+
+			<!-- Cafeterias -->
+			<item
+				android:id="@+id/action_cafeteria"
+				android:title="Cafeterías">
+				<menu>
+					<item
+						android:id="@+id/action_cafeteria_pinos"
+						android:title="Los Pinos"/>
+					<item
+						android:id="@+id/action_cafeteria_mosca"
+						android:title="La Mosca"/>
+					<item
+						android:id="@+id/action_cafeteria_manticot"
+						android:title="Manticot"/>
+					<item
+						android:id="@+id/action_cafeteria_todos"
+						android:title="Todas"/>
+				</menu>
+			</item>
+
+			<!-- Otros -->
+			<item
+				android:id="@+id/action_otros"
+				android:title="Otros">
+				<menu>
+					<item
+						android:id="@+id/action_otros_ip"
+						android:title="IP"/>
+					<item
+						android:id="@+id/action_otros_banco"
+						android:title="Banco"/>
+					<item
+						android:id="@+id/action_otros_panaderia"
+						android:title="Panadería"/>
+					<item
+						android:id="@+id/action_otros_centro_cultural"
+						android:title="Centro Cultural"/>
+					<item
+						android:id="@+id/action_otros_rectorado"
+						android:title="Rectorado"/>
+					<item
+						android:id="@+id/action_otros_discoteca"
+						android:title="Discoteca"/>
+					<item
+						android:id="@+id/action_otros_entradas"
+						android:title="Entradas"/>
+					<item
+						android:id="@+id/action_otros_deporte"
+						android:title="Área Deport."/>
+					<item
+						android:id="@+id/action_otros_pizza"
+						android:title="Pizzería"/>
+					<item
+						android:id="@+id/action_otros_piscina"
+						android:title="Piscina"/>
+					<item
+						android:id="@+id/action_otros_pista"
+						android:title="Pista"/>
+					<item
+						android:id="@+id/action_otros_todos"
+						android:title="Todos"/>
+				</menu>
+			</item>
+
+			<!-- Todos -->
+			<item
+				android:id="@+id/action_todos"
+				android:title="Todos"/>
+			<item
+				android:id="@+id/action_favoritos"
+				android:title="Favoritos"/>
+			<item
+				android:id="@+id/action_limpiar"
+				android:title="Limpiar"/>
+		</menu>
+	</item>
+</menu>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="rss">
+		<item>Firefoxmanía</item>
+		<item>Humanos</item>
+		<item>Internos</item>
+		<item>Dragones</item>
+		<item>Octavitos</item>
+		<item>UCi</item>
+		<item>Iblog</item>
+		<item>Seguridad</item>
+		<item>Android UCi</item>
+		<item>PHP UCi</item>
+		<item>Academia UCi</item>
+		<item>dProg Fac.6</item>
+		<item>VenusIT</item>
+		<item>Drupaleros</item>
+		<item>JavaBlog UCi</item>
+		<item>Periódico UCi</item>
+		<item>MindPro</item>
+		<item>Rice</item>
+		<item>BlackHat</item>
+		<item>Soporte FAQ</item>
+		<item>RCCi</item>
+		<item>Calisoft</item>
+		<item>Fénix</item>
+		<item>@string/all</item>
+	</string-array>
+
+	<string-array name="repo">
+		<item>@string/category_all</item>
+		<item>@string/category_recomended</item>
+		<item>@string/category_entertaiment</item>
+		<item>@string/category_tools</item>
+		<item>@string/category_books</item>
+		<item>@string/category_games</item>
+		<item>@string/category_comunication</item>
+		<item>@string/category_music</item>
+		<item>@string/category_video</item>
+		<item>@string/category_widgets</item>
+		<item>@string/category_pictures</item>
+		<item>@string/category_health</item>
+		<item>@string/category_wallpapers</item>
+		<item>@string/category_money</item>
+		<item>@string/category_maps</item>
+		<item>@string/category_no_clasify</item>
+	</string-array>
+
+	<string-array name="rss_2">
+		<item>Firefoxmanía</item>
+		<item>Humanos</item>
+		<item>Internos</item>
+		<item>Dragones</item>
+		<item>Octavitos</item>
+		<item>UCi</item>
+		<item>Iblog</item>
+		<item>Seguridad</item>
+		<item>Android UCi</item>
+		<item>PHP UCi</item>
+		<item>Academia UCi</item>
+		<item>dProg Fac.6</item>
+		<item>VenusIT</item>
+		<item>Drupaleros</item>
+		<item>JavaBlog UCi</item>
+		<item>Periódico UCi</item>
+		<item>MindPro</item>
+		<item>Rice</item>
+		<item>BlackHat</item>
+		<item>Soporte FAQ</item>
+		<item>RCCi</item>
+		<item>Calisoft</item>
+		<item>Fénix</item>
+	</string-array>
+
+	<string-array name="touch">
+		<item>@string/on_touch_desc</item>
+		<item>@string/on_touch_url</item>
+	</string-array>
+
+	<string-array name="time">
+		<item>@string/quota_refresh_nunca</item>
+		<item>@string/quota_refresh_two</item>
+		<item>@string/quota_refresh_five</item>
+		<item>@string/quota_refresh_ten</item>
+		<item>@string/quota_refresh_thirty</item>
+		<item>@string/quota_refresh_sixty</item>
+	</string-array>
+
+	<string-array name="states">
+		<item>@string/state_chatty</item>
+		<item>@string/state_avaliable</item>
+		<item>@string/state_away</item>
+		<item>@string/state_xa</item>
+		<item>@string/state_dnd</item>
+		<item>@string/state_offline</item>
+	</string-array>
+
+	<string-array name="avatar">
+		<item>@string/sd</item>
+		<item>@string/camera</item>
+	</string-array>
+
+	<string-array name="actions">
+		<item>@string/del_contact</item>
+	</string-array>
+</resources>

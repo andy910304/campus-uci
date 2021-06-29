@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FloatingActionButton">
+        <attr name="fab_colorPressed" format="color"/>
+        <attr name="fab_colorDisabled" format="color"/>
+        <attr name="fab_colorNormal" format="color"/>
+        <attr name="fab_icon" format="reference"/>
+        <attr name="fab_size" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr>
+        <attr name="fab_title" format="string"/>
+        <attr name="fab_stroke_visible" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="AddFloatingActionButton">
+        <attr name="fab_plusIconColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="FloatingActionsMenu">
+        <attr name="fab_addButtonColorPressed" format="color"/>
+        <attr name="fab_addButtonColorNormal" format="color"/>
+        <attr name="fab_addButtonSize" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr>
+        <attr name="fab_addButtonPlusIconColor" format="color"/>
+        <attr name="fab_addButtonStrokeVisible" format="boolean"/>
+        <attr name="fab_labelStyle" format="reference"/>
+        <attr name="fab_labelsPosition" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+        <attr name="fab_expandDirection" format="enum">
+            <enum name="up" value="0"/>
+            <enum name="down" value="1"/>
+            <enum name="left" value="2"/>
+            <enum name="right" value="3"/>
+        </attr>
+    </declare-styleable>
+
+	<declare-styleable name="CircleImageView">
+		<attr name="border_width" format="dimension" />
+		<attr name="border_color" format="color" />
+	</declare-styleable>
+
+	<declare-styleable name="RippleView">
+		<attr name="rv_alpha" format="integer" />
+		<attr name="rv_framerate" format="integer"/>
+		<attr name="rv_rippleDuration" format="integer"/>
+		<attr name="rv_zoomDuration" format="integer" />
+		<attr name="rv_color" format="color" />
+		<attr name="rv_centered" format="boolean" />
+		<attr name="rv_type" format="enum">
+			<enum name="simpleRipple" value="0"/>
+			<enum name="doubleRipple" value="1"/>
+			<enum name="rectangle" value="2" />
+		</attr>
+		<attr name="rv_ripplePadding" format="dimension" />
+		<attr name="rv_zoom" format="boolean" />
+		<attr name="rv_zoomScale" format="float" />
+
+	</declare-styleable>
+
+	<declare-styleable name="ActionButton">
+		<attr name="type" format="enum">
+			<enum name="DEFAULT" value="0" />
+			<enum name="MINI" value="1" />
+
+			<!--Deprecated and will be removed in version 2.0.0. Use DEFAULT and MINI instead-->
+			<enum name="normal" value="0" />
+			<enum name="mini" value="1" />
+		</attr>
+		<attr name="button_color" format="color" />
+		<attr name="button_colorPressed" format="color" />
+		<attr name="shadow_radius" format="dimension" />
+		<attr name="shadow_xOffset" format="dimension" />
+		<attr name="shadow_yOffset" format="dimension" />
+		<attr name="shadow_color" format="color" />
+		<attr name="stroke_width" format="dimension" />
+		<attr name="stroke_color" format="color" />
+		<attr name="show_animation" format="reference" />
+		<attr name="hide_animation" format="reference" />
+		<attr name="image" format="reference" />
+		<attr name="image_size" format="dimension" />
+
+		<!--Deprecated and will be removed in version 2.0.0. Use show_animation and hide_animation instead-->
+		<attr name="animation_onShow" format="reference" />
+		<attr name="animation_onHide" format="reference" />
+	</declare-styleable>
+
+
+
+
+	<!-- These top three attributes are not accessible to library users -->
+	<attr name="md_divider" format="color" />
+
+	<!-- Accessible global theming attributes -->
+	<attr name="md_dark_theme" format="boolean" />
+	<attr name="md_background_color" format="color" />
+
+	<attr name="md_icon" format="reference" />
+	<attr name="md_icon_max_size" format="dimension" />
+	<attr name="md_icon_limit_icon_to_default_size" format="boolean" />
+
+	<attr name="md_title_color" format="color" />
+	<attr name="md_content_color" format="color" />
+
+	<attr name="md_positive_color" format="color" />
+	<attr name="md_neutral_color" format="color" />
+	<attr name="md_negative_color" format="color" />
+
+	<attr name="md_item_color" format="color" />
+	<attr name="md_divider_color" format="color" />
+	<attr name="md_list_selector" format="reference" />
+
+	<attr name="md_btn_stacked_selector" format="reference" />
+	<attr name="md_btn_positive_selector" format="reference" />
+	<attr name="md_btn_neutral_selector" format="reference" />
+	<attr name="md_btn_negative_selector" format="reference" />
+
+
+</resources>

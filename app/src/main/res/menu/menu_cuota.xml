@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:app="http://schemas.android.com/apk/res-auto"
+	  xmlns:tools="http://schemas.android.com/tools"
+	  tools:context="cu.uci.cuota.CuotaActivity">
+
+	<item android:id="@+id/vitsa_por"
+		  android:title="@string/vista_por"
+		  android:orderInCategory="100"
+		  app:showAsAction="never"/>
+
+	<item android:id="@+id/vista_val"
+		  android:title="@string/vista_val"
+		  android:orderInCategory="100"
+		  app:showAsAction="never"/>
+
+	<item android:id="@+id/bchart"
+		  android:icon="@drawable/ic_bar_chart"
+		  android:title="@string/barchart"
+		  android:orderInCategory="100"
+		  app:showAsAction="always"/>
+
+	<item android:id="@+id/pchart"
+		  android:title="@string/piechart"
+		  android:orderInCategory="100"
+		  app:showAsAction="never"/>
+
+	<item android:id="@+id/action_last_search"
+		  android:title="@string/last_searchs"
+		  android:orderInCategory="100"
+		  app:showAsAction="never" />
+
+	<item android:id="@+id/action_last_delete"
+		  android:title="@string/delete_all"
+		  android:orderInCategory="100"
+		  app:showAsAction="never" />
+
+
+</menu>

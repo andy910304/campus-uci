@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:app="http://schemas.android.com/apk/res-auto"
+	  xmlns:tools="http://schemas.android.com/tools"
+	  tools:context="cu.uci.horario.HorarioActivity">
+
+	<item android:id="@+id/faculty"
+		  android:title="@string/faculty"
+		  android:icon="@drawable/ic_fa_university"
+		  android:orderInCategory="100"
+		  app:showAsAction="always"/>
+
+	<item android:id="@+id/week"
+		  android:title="@string/week"
+		  android:icon="@drawable/ic_week"
+		  android:orderInCategory="100"
+		  app:showAsAction="always"/>
+
+	<item android:id="@+id/group"
+		  android:title="@string/group"
+		  android:icon="@drawable/ic_fa_group"
+		  android:orderInCategory="100"
+		  app:showAsAction="always"/>
+
+	<item android:id="@+id/action_last_search"
+		  android:title="@string/last_search"
+		  android:orderInCategory="100"
+		  app:showAsAction="never" />
+
+	<item android:id="@+id/action_help"
+		  android:title="@string/help"
+		  android:orderInCategory="100"
+		  app:showAsAction="never" />
+</menu>

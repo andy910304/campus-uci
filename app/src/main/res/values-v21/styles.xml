@@ -1,0 +1,32 @@
+<resources>
+
+	<!-- Base application theme. -->
+	<style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+		<!-- Customize your theme here. -->
+		<item name="android:colorPrimary">@color/primary_color</item>
+		<item name="android:colorPrimaryDark">@color/primary_dark_color</item>
+		<item name="android:colorAccent">@color/accent_color</item>
+		<item name="android:navigationBarColor">@color/primary_color</item>
+	</style>
+
+
+	<style name="MD_Light" parent="Theme.AppCompat.Light.Dialog">
+		<item name="md_divider">@color/md_divider_black</item>
+		<item name="md_list_selector">?android:selectableItemBackground</item>
+		<item name="md_btn_stacked_selector">?android:selectableItemBackground</item>
+		<item name="md_btn_positive_selector">@drawable/md_btn_selector_ripple</item>
+		<item name="md_btn_neutral_selector">@drawable/md_btn_selector_ripple</item>
+		<item name="md_btn_negative_selector">@drawable/md_btn_selector_ripple</item>
+	</style>
+
+	<style name="MD_Dark" parent="Theme.AppCompat.Dialog">
+		<item name="md_divider">@color/md_divider_white</item>
+		<item name="md_list_selector">?android:selectableItemBackground</item>
+		<item name="md_btn_stacked_selector">?android:selectableItemBackground</item>
+		<item name="md_btn_positive_selector">@drawable/md_btn_selector_ripple_dark</item>
+		<item name="md_btn_neutral_selector">@drawable/md_btn_selector_ripple_dark</item>
+		<item name="md_btn_negative_selector">@drawable/md_btn_selector_ripple_dark</item>
+	</style>
+
+
+</resources>

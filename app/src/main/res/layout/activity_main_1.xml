@@ -1,0 +1,633 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			 xmlns:tools="http://schemas.android.com/tools"
+			 android:layout_width="match_parent"
+			 android:layout_height="match_parent"
+			 android:orientation="vertical"
+			 tools:context=".MainActivity"
+			 android:background="@color/app_background">
+
+	<RelativeLayout
+		android:id="@+id/rl"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<android.support.v7.widget.Toolbar
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/mToolbar"
+			android:paddingTop="5dp"
+			android:layout_below="@+id/ll_status_bar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:minHeight="?attr/actionBarSize"
+			android:background="@color/primary_color"
+			android:theme="@style/AppTheme"
+			android:popupTheme="@style/Theme.AppCompat.Light">
+
+			<RelativeLayout
+				android:gravity="bottom"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="10dp"
+				android:paddingLeft="30dp"
+				android:paddingBottom="10dp">
+
+				<TextView
+					android:id="@+id/tvDominio"
+					android:text="@string/dominio"
+					android:textSize="17sp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="47dp"/>
+
+				<TextView
+					android:id="@+id/tvAppName"
+					android:text="@string/campus_universitario"
+					android:textSize="20sp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/tvDominio"
+					android:layout_alignLeft="@+id/tvDominio"
+					android:layout_alignStart="@+id/tvDominio"
+					android:paddingBottom="10dp"/>
+
+			</RelativeLayout>
+		</android.support.v7.widget.Toolbar>
+
+		<View
+			android:id="@+id/shadow_toolbar"
+			android:layout_below="@+id/mToolbar"
+			android:layout_width="match_parent"
+			android:layout_height="3dp"
+			android:background="@drawable/toolbar_dropshadow" />
+
+		<LinearLayout
+			android:padding="1dp"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@+id/mToolbar"
+			android:orientation="vertical"
+			>
+
+			<ScrollView
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent">
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+						<LinearLayout
+							android:id="@+id/llRss"
+							android:padding="10dp"
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:orientation="horizontal"
+							android:weightSum="1">
+
+							<ImageView
+								android:id="@+id/ivRss"
+								android:layout_weight=".1"
+								android:gravity="center"
+								android:layout_width="50dp"
+								android:layout_height="50dp"
+								android:src="@drawable/ic_rss"/>
+
+							<LinearLayout
+								android:layout_weight=".9"
+								android:paddingLeft="10dp"
+								android:paddingTop="2dp"
+								android:orientation="vertical"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content">
+
+								<TextView
+									android:id="@+id/tvRssTitle"
+									android:text="@string/rss_uci_title"
+									android:textColor="@color/text_color"
+									android:textSize="19sp"
+									android:layout_width="fill_parent"
+									android:layout_height="0dp"
+									android:layout_weight=".1"
+									android:layout_marginLeft="3dp"
+									/>
+
+								<TextView
+									android:id="@+id/tvRssSubtitle"
+									android:text="@string/rss_uci_subtitle"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="fill_parent"
+									android:layout_height="0dp"
+									android:layout_weight=".1"
+									android:layout_marginLeft="3dp"
+									/>
+
+							</LinearLayout>
+
+							<ImageView
+								android:layout_marginRight="10dp"
+								android:layout_gravity="center"
+								android:layout_width="23dp"
+								android:layout_height="23dp"
+								android:src="@drawable/ic_action_next_item"/>
+
+						</LinearLayout>
+
+
+						<LinearLayout
+							android:id="@+id/llDirectorio"
+							android:padding="10dp"
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:orientation="horizontal"
+							android:weightSum="1">
+
+							<ImageView
+								android:id="@+id/ivDirectorio"
+								android:layout_weight=".1"
+								android:gravity="center"
+								android:layout_width="50dp"
+								android:layout_height="50dp"
+								android:src="@drawable/ic_directorio"/>
+
+							<LinearLayout
+								android:layout_weight=".9"
+								android:paddingLeft="10dp"
+								android:paddingTop="2dp"
+								android:orientation="vertical"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content">
+
+								<TextView
+									android:id="@+id/tvDirectorioTitle"
+									android:text="@string/directorio_uci_title"
+									android:textColor="@color/text_color"
+									android:textSize="19sp"
+									android:layout_width="fill_parent"
+									android:layout_height="0dp"
+									android:layout_weight=".1"
+									android:layout_marginLeft="3dp"
+									/>
+
+								<TextView
+									android:id="@+id/tvDirectorioSubtitle"
+									android:text="@string/directorio_uci_subtitle"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="fill_parent"
+									android:layout_height="0dp"
+									android:layout_weight=".1"
+									android:layout_marginLeft="3dp"
+									/>
+
+							</LinearLayout>
+
+							<ImageView
+								android:layout_marginRight="10dp"
+								android:layout_gravity="center"
+								android:layout_width="23dp"
+								android:layout_height="23dp"
+								android:src="@drawable/ic_action_next_item"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/llCuota"
+							android:padding="10dp"
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:orientation="horizontal"
+							android:weightSum="1">
+
+							<ImageView
+								android:id="@+id/ivCuota"
+								android:layout_weight=".1"
+								android:gravity="center"
+								android:layout_width="50dp"
+								android:layout_height="50dp"
+								android:src="@drawable/ic_cuota"/>
+
+							<LinearLayout
+								android:layout_weight=".9"
+								android:paddingLeft="10dp"
+								android:paddingTop="2dp"
+								android:orientation="vertical"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content">
+
+								<TextView
+									android:id="@+id/tvCuotaTitle"
+									android:text="@string/cuota_uci_title"
+									android:textColor="@color/text_color"
+									android:textSize="19sp"
+									android:layout_width="fill_parent"
+									android:layout_height="0dp"
+									android:layout_weight=".1"
+									android:layout_marginLeft="3dp"
+									/>
+
+								<TextView
+									android:id="@+id/tvCuotaSubtitle"
+									android:text="@string/cuota_uci_subtitle"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="fill_parent"
+									android:layout_height="0dp"
+									android:layout_weight=".1"
+									android:layout_marginLeft="3dp"
+									/>
+
+							</LinearLayout>
+
+							<ImageView
+								android:layout_marginRight="10dp"
+								android:layout_gravity="center"
+								android:layout_width="23dp"
+								android:layout_height="23dp"
+								android:src="@drawable/ic_action_next_item"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/llHorario"
+							android:padding="10dp"
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:orientation="horizontal"
+							android:weightSum="1">
+
+							<ImageView
+								android:id="@+id/ivHorario"
+								android:layout_weight=".1"
+								android:gravity="center"
+								android:layout_width="50dp"
+								android:layout_height="50dp"
+								android:src="@drawable/ic_horario"/>
+
+							<LinearLayout
+								android:layout_weight=".9"
+								android:paddingLeft="10dp"
+								android:paddingTop="2dp"
+								android:orientation="vertical"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content">
+
+								<TextView
+									android:id="@+id/tvHorarioTitle"
+									android:text="@string/horario_uci_title"
+									android:textColor="@color/text_color"
+									android:textSize="19sp"
+									android:layout_width="fill_parent"
+									android:layout_height="0dp"
+									android:layout_weight=".1"
+									android:layout_marginLeft="3dp"
+									/>
+
+								<TextView
+									android:id="@+id/tvHorarioSubtitle"
+									android:text="@string/horario_uci_subtitle"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="fill_parent"
+									android:layout_height="0dp"
+									android:layout_weight=".1"
+									android:layout_marginLeft="3dp"
+									/>
+
+							</LinearLayout>
+
+							<ImageView
+								android:layout_marginRight="10dp"
+								android:layout_gravity="center"
+								android:layout_width="23dp"
+								android:layout_height="23dp"
+								android:src="@drawable/ic_action_next_item"/>
+
+						</LinearLayout>
+
+
+						<LinearLayout
+							android:id="@+id/llMenu"
+							android:padding="10dp"
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:orientation="horizontal"
+							android:weightSum="1">
+
+							<ImageView
+								android:id="@+id/ivMenu"
+								android:layout_weight=".1"
+								android:gravity="center"
+								android:layout_width="50dp"
+								android:layout_height="50dp"
+								android:src="@drawable/ic_menu"/>
+
+							<LinearLayout
+								android:layout_weight=".9"
+								android:paddingLeft="10dp"
+								android:paddingTop="2dp"
+								android:orientation="vertical"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content">
+
+								<TextView
+									android:id="@+id/tvMenuTitle"
+									android:text="@string/menu_uci_title"
+									android:textColor="@color/text_color"
+									android:textSize="19sp"
+									android:layout_width="fill_parent"
+									android:layout_height="0dp"
+									android:layout_weight=".1"
+									android:layout_marginLeft="3dp"
+									/>
+
+								<TextView
+									android:id="@+id/tvMenuSubtitle"
+									android:text="@string/menu_uci_subtitle"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="fill_parent"
+									android:layout_height="0dp"
+									android:layout_weight=".1"
+									android:layout_marginLeft="3dp"
+									/>
+
+							</LinearLayout>
+
+							<ImageView
+								android:layout_marginRight="10dp"
+								android:layout_gravity="center"
+								android:layout_width="23dp"
+								android:layout_height="23dp"
+								android:src="@drawable/ic_action_next_item"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/llMapa"
+							android:padding="10dp"
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:orientation="horizontal"
+							android:weightSum="1">
+
+							<ImageView
+								android:id="@+id/ivMapa"
+								android:layout_weight=".1"
+								android:gravity="center"
+								android:layout_width="50dp"
+								android:layout_height="50dp"
+								android:src="@drawable/ic_mapa"/>
+
+							<LinearLayout
+								android:layout_weight=".9"
+								android:paddingLeft="10dp"
+								android:paddingTop="2dp"
+								android:orientation="vertical"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content">
+
+								<TextView
+									android:id="@+id/tvMapaTitle"
+									android:text="@string/mapa_uci_title"
+									android:textColor="@color/text_color"
+									android:textSize="19sp"
+									android:layout_width="fill_parent"
+									android:layout_height="0dp"
+									android:layout_weight=".1"
+									android:layout_marginLeft="3dp"
+									/>
+
+								<TextView
+									android:id="@+id/tvMapaSubtitle"
+									android:text="@string/mapa_uci_subtitle"
+									android:textColor="@color/text_color"
+									android:textSize="14sp"
+									android:layout_width="fill_parent"
+									android:layout_height="0dp"
+									android:layout_weight=".1"
+									android:layout_marginLeft="3dp"
+									/>
+
+							</LinearLayout>
+
+							<ImageView
+								android:layout_marginRight="10dp"
+								android:layout_gravity="center"
+								android:layout_width="23dp"
+								android:layout_height="23dp"
+								android:src="@drawable/ic_action_next_item"/>
+
+						</LinearLayout>
+
+					<LinearLayout
+						android:id="@+id/llChat"
+						android:padding="10dp"
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:orientation="horizontal"
+						android:weightSum="1">
+
+						<ImageView
+							android:id="@+id/ivChat"
+							android:layout_weight=".1"
+							android:gravity="center"
+							android:layout_width="50dp"
+							android:layout_height="50dp"
+							android:src="@drawable/ic_chat"/>
+
+						<LinearLayout
+							android:layout_weight=".9"
+							android:paddingLeft="10dp"
+							android:paddingTop="2dp"
+							android:orientation="vertical"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content">
+
+							<TextView
+								android:id="@+id/tvChatTitle"
+								android:text="@string/chat_uci_title"
+								android:textColor="@color/text_color"
+								android:textSize="19sp"
+								android:layout_width="fill_parent"
+								android:layout_height="0dp"
+								android:layout_weight=".1"
+								android:layout_marginLeft="3dp"
+								/>
+
+							<TextView
+								android:id="@+id/tvChatSubtitle"
+								android:text="@string/chat_uci_subtitle"
+								android:textColor="@color/text_color"
+								android:textSize="14sp"
+								android:layout_width="fill_parent"
+								android:layout_height="0dp"
+								android:layout_weight=".1"
+								android:layout_marginLeft="3dp"
+								/>
+
+						</LinearLayout>
+
+						<ImageView
+							android:layout_marginRight="10dp"
+							android:layout_gravity="center"
+							android:layout_width="23dp"
+							android:layout_height="23dp"
+							android:src="@drawable/ic_action_next_item"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:id="@+id/llMarket"
+						android:padding="10dp"
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:orientation="horizontal"
+						android:weightSum="1">
+
+						<ImageView
+							android:id="@+id/ivMarket"
+							android:layout_weight=".1"
+							android:gravity="center"
+							android:layout_width="50dp"
+							android:layout_height="50dp"
+							android:src="@drawable/ic_chat"/>
+
+						<LinearLayout
+							android:layout_weight=".9"
+							android:paddingLeft="10dp"
+							android:paddingTop="2dp"
+							android:orientation="vertical"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content">
+
+							<TextView
+								android:id="@+id/tvMarketTitle"
+								android:text="@string/repo_uci_title"
+								android:textColor="@color/text_color"
+								android:textSize="19sp"
+								android:layout_width="fill_parent"
+								android:layout_height="0dp"
+								android:layout_weight=".1"
+								android:layout_marginLeft="3dp"
+								/>
+
+							<TextView
+								android:id="@+id/tvMarketSubtitle"
+								android:text="@string/repo_uci_subtitle"
+								android:textColor="@color/text_color"
+								android:textSize="14sp"
+								android:layout_width="fill_parent"
+								android:layout_height="0dp"
+								android:layout_weight=".1"
+								android:layout_marginLeft="3dp"
+								/>
+
+						</LinearLayout>
+
+						<ImageView
+							android:layout_marginRight="10dp"
+							android:layout_gravity="center"
+							android:layout_width="23dp"
+							android:layout_height="23dp"
+							android:src="@drawable/ic_action_next_item"/>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</ScrollView>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<cu.uci.utils.FloatingButtonLib.ActionButton
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:layout_gravity="right"
+		android:layout_marginRight="30dp"
+		android:layout_marginTop="100dp"
+		android:id="@+id/fab_login"
+		android:layout_width="56dp"
+		android:layout_height="56dp"/>
+
+	<FrameLayout
+		android:id="@+id/fl_exit"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+	</FrameLayout>
+
+	<FrameLayout
+		android:id="@+id/fl_new_chat_fuction"
+		android:visibility="gone"
+		android:layout_gravity="center"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_gravity="center"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:id="@+id/iv_new_chat_function"
+			android:src="@drawable/ic_chat"
+			android:layout_gravity="center"
+			android:layout_width="150dp"
+			android:layout_height="150dp"/>
+
+		<TextView
+		android:layout_marginTop="10dp"
+		android:id="@+id/tv_new_chat_function"
+		android:textSize="16dp"
+		android:text="@string/new_function"
+		android:layout_gravity="center"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+
+	</LinearLayout>
+
+	</FrameLayout>
+
+	<TextView
+		android:id="@+id/tvExit"
+		android:textSize="14dp"
+		android:visibility="invisible"
+		android:text="@string/exit"
+		android:layout_gravity="center"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+
+	<cu.uci.utils.FloatingButtonLib.ActionButton
+		android:visibility="invisible"
+		android:layout_gravity="left|bottom"
+		android:layout_marginLeft="15dp"
+		android:layout_marginBottom="15dp"
+		android:id="@+id/fab_exit"
+		android:layout_width="56dp"
+		android:layout_height="56dp"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"/>
+
+	<cu.uci.utils.FloatingButtonLib.ActionButton
+		android:visibility="invisible"
+		android:layout_gravity="right|bottom"
+		android:layout_marginRight="15dp"
+		android:layout_marginBottom="15dp"
+		android:layout_marginTop="100dp"
+		android:id="@+id/fab_stay"
+		android:layout_width="56dp"
+		android:layout_height="56dp"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"/>
+
+	<View
+		android:id="@+id/statusBarBackground"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
+
+</FrameLayout>

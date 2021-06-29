@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="primary_color">#23b4f7</color>
+	<color name="primary_dark_color">#ff119ad4</color>
+	<color name="accent_color">#ffffff</color>
+	<color name="app_background">#e8e8e8</color>
+	<color name="app_background2">#dedede</color>
+	<color name="app_background2_transparent">#c8e8e8e8</color>
+	<color name="app_black_transparent">#c8040404</color>
+	<color name="fab_color">#96e51c24</color>
+	<color name="fab_color_pressed">#f45a60</color>
+	<color name="fab_sms">#51b753</color>
+	<color name="fab_sms_pressed">#8cc24a</color>
+	<color name="fab_email">#7986cb</color>
+	<color name="fab_email_pressed">#e1bee7</color>
+	<color name="text_color">#686868</color>
+	<color name="amarillo">#f9fb29</color>
+	<color name="amarillo_pressed">#fcfd7f</color>
+
+	<color name="firefox_color">#32ffca77</color>
+	<color name="humanos_color">#32a04877</color>
+	<color name="internos_color">#320288d1</color>
+	<color name="dragones_color">#32f04848</color>
+	<color name="octavitos_color">#32fcfd7f</color>
+	<color name="uci_color">#325ad0ee</color>
+	<color name="iblog_color">#32b3b3b3</color>
+	<color name="seguridad_color">#96ffffff</color>
+	<color name="android_color">#32a5c739</color>
+	<color name="academia_color">#326b8bb2</color>
+	<color name="gladiadores_color">#32b28c77</color>
+	<color name="drupal_color">#32023e94</color>
+	<color name="java_color">#32f58219</color>
+	<color name="mindpro_color">#320d0d0d</color>
+
+	<color name="neutral_color">#ffb3b3b3</color>
+
+	<color name="test">#96ffffff</color>
+</resources>

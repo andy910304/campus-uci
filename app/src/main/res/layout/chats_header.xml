@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				xmlns:app="http://schemas.android.com/apk/res-auto"
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/lv_header">
+
+	<LinearLayout
+		android:id="@+id/koko"
+		android:padding="5dp"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:id="@+id/ll_iv_user"
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent">
+
+			<ImageView
+				android:src="@drawable/ic_new_message"
+				android:elevation="3dp"
+				android:id="@+id/iv_user"
+				android:layout_marginLeft="10dp"
+				android:layout_width="32dp"
+				android:layout_height="32dp"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:weightSum="1"
+			android:layout_marginLeft="5dp"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<LinearLayout
+				android:layout_weight=".9"
+				android:layout_marginLeft="5dp"
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<TextView
+					android:layout_marginTop="4dp"
+					android:singleLine="true"
+					android:id="@+id/tv_name"
+					android:textColor="@android:color/white"
+					android:text="@string/conversa"
+					android:textSize="15sp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"/>
+
+				<TextView
+					android:visibility="gone"
+					android:layout_marginRight="40dp"
+					android:lines="2"
+					android:id="@+id/tv_status_mess"
+					android:textColor="@color/text_color"
+					android:text="@string/barchart"
+					android:textSize="14sp"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"/>
+
+				<TextView
+					android:layout_gravity="right"
+					android:visibility="gone"
+					android:id="@+id/tv_status"
+					android:textColor="@color/text_color"
+					android:text="@string/barchart"
+					android:textSize="14sp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+			</LinearLayout>
+
+			<ImageView
+				android:visibility="invisible"
+				android:layout_weight=".1"
+				android:layout_gravity="right|bottom"
+				android:layout_marginBottom="5dp"
+				android:layout_marginRight="5dp"
+				android:src="@drawable/ic_new_message"
+				android:id="@+id/iv_con"
+				android:layout_width="25dp"
+				android:layout_height="25dp"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<View
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:id="@+id/shadow_toolbar"
+		android:layout_below="@+id/koko"
+		android:layout_width="match_parent"
+		android:layout_height="2dp"
+		android:background="@drawable/chat_dropshadow" />
+
+	<cu.uci.utils.views.CircleImageView
+		android:visibility="gone"
+		app:border_color="@android:color/white"
+		app:border_width="1dp"
+		android:layout_marginTop="45dp"
+		android:src="@drawable/ic_available"
+		android:id="@+id/iv_state"
+		android:layout_marginLeft="55dp"
+		android:layout_width="25dp"
+		android:layout_height="25dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content">
+
+	<TextView
+		android:text="@string/cancel_anyway"
+		android:id="@+id/user"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textSize="@dimen/customEntry"
+		android:layout_marginTop="4dp"
+		android:textColor="#000000" />
+
+	<CheckBox
+		android:id="@+id/not_show"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textSize="@dimen/customEntry"
+		android:textColor="#000000"
+		android:text="@string/not_show"
+		android:layout_marginTop="18dp" />
+
+</LinearLayout>
